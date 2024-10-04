@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Page - Fun Time Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Message</h1>
+        <div class="message" id="displayMessage"></div>
+        <a href="main.html" class="next-btn">Back</a>
+    </div>
+
+    <script>
+        // Function to get URL parameters
+        function getQueryParams() {
+            const params = {};
+            window.location.search.substring(1).split("&").forEach(param => {
+                const [key, value] = param.split("=");
+                params[decodeURIComponent(key)] = decodeURIComponent(value);
+            });
+            return params;
+        }
+
+        // Display the message from URL parameters
+        window.onload = function() {
+            const params = getQueryParams();
+            const messageBox = document.getElementById('displayMessage');
+            messageBox.textContent = params.message || "No message found.";
+        };
+    </script>
+</body>
+</html>

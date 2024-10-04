@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #fbeef4; /* Soft pink for a welcoming feel */
+  background-image: url('https://images.unsplash.com/photo-1520194855877-e2e4a40d7cda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDR8fGZsb3dlcnxlbnwwfHx8fDE2MzA3NTI0MjE&ixlib=rb-1.2.1&q=80&w=1080'); /* Floral background */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Landing Page Styling */
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* White with slight transparency for readability */
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.landing-container h1 {
+  color: #8a3b8f; /* Soft purple for elegance */
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.landing-container p {
+  color: #6a0572; /* Darker purple for text */
+  font-size: 18px;
+}
+
+.landing-container a {
+  color: #f8a5c2; /* Light pink for links */
+  text-decoration: none;
+}
+
+.next-btn {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #6a0572; /* Light pink for the button */
+  color: #f7f3f3; /* White text for better visibility */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.next-btn:hover {
+  background-color:#f03f7d; /* Darker pink on hover */
+}
+
+/* Main Page Styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8); /* White with slight transparency */
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.option-box {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffcad4; /* Soft pink for option boxes */
+  border: 2px solid #ffc3a0; /* Light peach border */
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  color: #6a0572; /* Darker purple for text */
+}
+
+.option-box:hover {
+  background-color: #f8a5c2; /* Light pink on hover */
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #6a0572; /* Dark purple for message text */
+  text-align: center;
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .options {
+    flex-direction: column;
+  }
+
+  .option-box {
+    width: 120px;
+    height: 120px;
+  }
+
+  .message {
+    font-size: 16px;
+  }
+}
